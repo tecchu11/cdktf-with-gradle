@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.hashicorp:cdktf:0.12.0")
+    implementation("com.hashicorp:cdktf:0.13.0-pre.6")
     implementation("software.constructs:constructs:10.1.68")
     implementation("com.hashicorp:cdktf-provider-docker:2.0.13")
 
