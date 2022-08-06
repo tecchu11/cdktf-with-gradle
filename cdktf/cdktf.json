@@ -1,0 +1,12 @@
+{
+  "language": "java",
+  "app": "../gradlew run",
+  "projectId": "aa3814de-c092-4b86-963f-405e040d87a2",
+  "sendCrashReports": "false",
+  "terraformProviders": [],
+  "terraformModules": [],
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}
