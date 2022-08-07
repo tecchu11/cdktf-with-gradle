@@ -1,6 +1,6 @@
 {
   "language": "java",
-  "app": "../gradlew run",
+  "app": "../gradlew cdktfBuild",
   "projectId": "aa3814de-c092-4b86-963f-405e040d87a2",
   "sendCrashReports": "false",
   "terraformProviders": [],
