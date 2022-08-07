@@ -1,16 +1,10 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
-    kotlin("jvm") version "1.7.10"
-    application
+    id("cdktf.kotlin-jvm-convention")
+    id("cdktf.deployment-convention")
 }
 
 group = "org.example"
 version = "0.1"
-
-repositories {
-    mavenCentral()
-}
 
 dependencies {
     implementation("com.hashicorp:cdktf:0.12.0")
@@ -22,21 +16,4 @@ dependencies {
 
 application {
     mainClass.set("org.example.MainKt")
-}
-
-tasks.test {
-    useJUnitPlatform()
-}
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "17"
-}
-
-tasks.register("${project.name}Build") {
-    group = "application"
-    description = "Task for cdktf. Run project: ${project.name}"
-    dependsOn("run")
-    doLast {
-        println("[INFO] gradle run with project: ${project.name}")
-    }
 }
