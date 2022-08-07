@@ -31,3 +31,12 @@ tasks.test {
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "17"
 }
+
+tasks.register("${project.name}Build") {
+    group = "application"
+    description = "Task for cdktf. Run project: ${project.name}"
+    dependsOn("run")
+    doLast {
+        println("[INFO] gradle run with project: ${project.name}")
+    }
+}
