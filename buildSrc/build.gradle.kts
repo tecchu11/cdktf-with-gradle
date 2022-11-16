@@ -7,7 +7,7 @@ repositories {
 }
 
 dependencies {
-    val kotlin = "1.7.20"
+    val kotlin = "1.7.21"
     val ktlint = "11.0.0"
 
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin")
