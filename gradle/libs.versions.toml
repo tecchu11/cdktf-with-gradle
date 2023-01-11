@@ -1,6 +1,6 @@
 [libraries]
-hasicorp-cdktf = "com.hashicorp:cdktf:0.14.1"
-hasicorp-provider-docker = "com.hashicorp:cdktf-provider-docker:4.0.0"
+hasicorp-cdktf = "com.hashicorp:cdktf:0.15.0-pre.49"
+hasicorp-provider-docker = "com.hashicorp:cdktf-provider-docker:4.0.3"
 software-constructs = "software.constructs:constructs:10.1.170"
 
 [bundles]
